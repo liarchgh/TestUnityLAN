@@ -131,7 +131,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3031975470514355705}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
@@ -173,7 +173,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3031975470514355705}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &3031975470503259581
 Behaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 3031975470515627035}
   - component: {fileID: 581760348}
   - component: {fileID: 581760349}
+  - component: {fileID: 1034169849011338711}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -230,7 +231,7 @@ CharacterController:
   m_GameObject: {fileID: 3031975470514355707}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Height: 1.8
   m_Radius: 0.5
@@ -246,7 +247,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3031975470514355707}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
@@ -530,6 +531,20 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &1034169849011338711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3031975470514355707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05760152c75e59c41b8431ab8204183a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPSCharacterCam: {fileID: 3031975470513766363}
+  audioListener: {fileID: 3031975470516052987}
 --- !u!1 &3779109053874855407
 GameObject:
   m_ObjectHideFlags: 0
