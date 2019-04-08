@@ -196,8 +196,8 @@ GameObject:
   - component: {fileID: 3031975470517673627}
   - component: {fileID: 3031975470515627035}
   - component: {fileID: 581760348}
-  - component: {fileID: 581760349}
   - component: {fileID: 1034169849011338711}
+  - component: {fileID: 5000581119492208533}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -509,28 +509,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &581760349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3031975470514355707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &1034169849011338711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,6 +523,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPSCharacterCam: {fileID: 3031975470513766363}
   audioListener: {fileID: 3031975470516052987}
+--- !u!114 &5000581119492208533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3031975470514355707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62f9b456cc7e814ab10bb7f375ff86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTransform: {fileID: 3031975470514250203}
+  lerpRate: 30
 --- !u!1 &3779109053874855407
 GameObject:
   m_ObjectHideFlags: 0
